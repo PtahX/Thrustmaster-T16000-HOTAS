@@ -2,12 +2,16 @@
 Created by PtahX Dec, 2017
 
 
-This is a very basic script meant to be run with the default keybinds in Star Citizen. It should be noted that I run VoiceAttack for Shields, Weapons & Power settings. I'm still learning this stuff so use at your own risk. Feel free to modify as you like, I'd just ask that you fork your work from here so I can see what others have decided to modify and maybe give me a mention if you think it's decent. This config assumes a right hand joystick setup with HOTAS on the left. I am just setting this up so it will be a work in progress. 
+This is a very basic script meant to be run with the default keybinds in Star Citizen. It should be noted that I run VoiceAttack for Shields, Weapons & Power settings. I'm still learning this stuff so use at your own risk. Feel free to modify as you like, I'd just ask that you fork your work from here so I can see what others have decided to modify and maybe give me a mention if you think it's decent. This config assumes a right hand joystick setup with HOTAS on the left. I am just setting this up so it will be a work in progress. Sorry I don't have a printed key layout setup yet - have a look at the code I tried to make it really easy to read and understand.
+
+Cheers!
+PtahX
 
 
 Files
 -----------------------------
 PtahXBasic.TMC - My main script to date
+
 ptahx_mappings.tmh - will autoload when you compile the config
 
 Hardware
