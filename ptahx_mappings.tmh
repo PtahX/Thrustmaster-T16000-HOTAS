@@ -1,0 +1,90 @@
+// PtahX 
+// This Header file contains defined key mappings for ease of use longer term
+// recommend using pp_rebindkeys command in console of Star Citizen before using
+
+// Define misc
+	define self_destruct			R_ALT+BSP
+	define eject					R_ALT+'l'	
+	define lights					't'
+	define respawn					'x'
+	define mobiglass				F1         
+	define scoreboard				F10
+	define contacts					F11
+	define chat						F12
+	define activate_chat			ENT
+	define teamspeak				BRK
+
+// Engines
+	define afterburner				CTL   
+	define space_brake				L_ALT+'x'
+	define match_speed				'm'
+
+
+// Thrusters
+	define strafe_left				'a'
+	define strafe_right				'd'
+	define strafe_up				SPC
+	define strafe_down				L_CTL
+	define roll_left				'q'
+	define roll_right				'e' 
+
+
+// flight & ifcs
+	define comstab					R_CTL+'j'
+	define gforce					R_CTL+'k'
+	define decouple					'c'
+	define landing_gear				'n' 
+	define auto_land				'n'
+	define quantum_jump				'f'	// needs to be a pulse
+	define quantum_map				'b'
+	// define exit_seat				'f' // Long hold F
+	// define use					'f' // do I want this seperate?
+
+
+
+// Targeting
+	define nearest_hostile			't'
+	define cycle_hostile			'y'
+	define cycle_all				'i'
+	define cycle_friendly			'u'
+	define pin_target				'p'  
+	define reticle_focus			'r'
+	define cycle_reticle_mode		R_ALT+'k'
+	define target_focus				L_ALT+'r'
+	//define scan_mode				
+	//define scan_active_ping
+
+
+// Weapons
+	define lock_missile				'0'//mouse3 pulse
+	define fire_missile				'0'//mouse3 2200ms hold
+	define fire_group1				'0'//mouse1
+	define fire_group2				'0'//mouse2
+	define fire_group3				'0'//need to check
+	define fire_group4				'0'//need to check
+	
+// Defense & Other
+	define gimbal_lock				R_ALT+'j'
+	define cycle_ammo				DX24
+	define cycle_missiles			DX26
+	define launch_cm				DX3   // default 'g' held down
+	define cycle_cm					'g' 
+
+
+// Power Management
+	define power_weapons			'1'   
+	define power_sheilds			'2' 
+	define power_engines			'3' 
+	define reset_power				'0' 
+
+
+// Shield Management
+	define shield_forward			DX15 
+	define shield_right				DX16
+	define shield_back				DX17
+	define shield_left				DX18
+	define shield_up				DX27
+	define shield_down				DX29
+	define shield_reset				DX19
+
+
