@@ -2,9 +2,9 @@
 Created by PtahX Dec, 2017
 
 
-This is a very basic script meant to be run with the default keybinds in Star Citizen. It should be noted that I normally run VoiceAttack for Shields, Weapons & Power settings.
+This is a very basic script meant to be run with the default keybinds in Star Citizen (version 3.0 PTU). It should be noted that I normally run VoiceAttack for Shields, Weapons & Power settings and that this is by no means a completed project. Feel free to Branch this and modify as you will, I'd appreciate it if you would upload to GITHUB any changes so I can see what otehrs are using / fixing :)
 
-Cheers!
+Hopefully see you in game!
 PtahX
 
 
