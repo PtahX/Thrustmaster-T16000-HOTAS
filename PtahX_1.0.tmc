@@ -1,0 +1,189 @@
+// Created by: PtahX
+// Star Citizen Version 3.0
+// Running t16000, Thrustmaster TFRP Rudder pedals and the TWCS Throttle in this configuration
+// It should be nooted that I run Voice Attack for Shields, Weapons & Power settings but if needed later they have been assigned to a variable as need in the ptahx_mappings file
+
+include "target.tmh"
+include "ptahx_mappings.tmh"
+include "ptahx_functions.tmh"
+
+
+
+int main(){
+	
+	// Device Exclusions
+
+	Configure(&HCougar, MODE_EXCLUDED); // cougar
+	Configure(&Joystick, MODE_EXCLUDED); // Warthog
+	Configure(&Throttle, MODE_EXCLUDED); // Warthog throttle
+	Configure(&LMFD, MODE_EXCLUDED); // MFD
+	Configure(&RMFD, MODE_EXCLUDED); // RMFD
+	Configure(&TFRPRudder, MODE_EXCLUDED); // TFRP Rudder Pedals (if plugged in as usb - not direct to throttle)
+	// Configure(&T16000, MODE_EXCLUDED); // T16000 Stick 
+	// Configure(&TWCSThrottle, MODE_EXCLUDED); // FCM Throttle
+
+	if(Init(&EventHandle)) return 1;
+
+// ---------------------------------------------------------------------------------------
+// Keboard Layout
+// ---------------------------------------------------------------------------------------
+	
+	// keyboard Setup (non ENG might need to change to usb codes for other keyboards)
+		SetKBRate(32, 50);
+		SetKBLayout(KB_ENG);
+
+// ---------------------------------------------------------------------------------------
+// calls from custom function files
+// ---------------------------------------------------------------------------------------
+	
+	SetupDefaultAxis(); //clears the Axis from the T16000 & throttle
+	initResetStick(); //clears the previous binds from the T16000 & throttle
+
+
+// ---------------------------------------------------------------------------------------
+// DirectX Axis
+// ---------------------------------------------------------------------------------------
+
+	// DX_Axis
+	
+		// T16000 Joystick DX Axis
+			MapAxis(&T16000, JOYX, DX_X_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+			MapAxis(&T16000, JOYY, DX_Y_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+			MapAxis(&T16000, RUDDER, DX_ZROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+			MapAxis(&T16000, THR, 0, AXIS_NORMAL, MAP_ABSOLUTE); // not used here
+
+		// TWCS Throttle DX Axis
+			MapAxis(&TWCSThrottle, TRDR, 0, AXIS_NORMAL, MAP_ABSOLUTE); // not used here
+			MapAxis(&TWCSThrottle, TTHR, DX_THROTTLE_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); //Throttle slider reversed
+			MapAxis(&TWCSThrottle, TANT, 0, AXIS_NORMAL, MAP_ABSOLUTE); // not used here
+			MapAxis(&TWCSThrottle, TMSTX, 0, AXIS_NORMAL, MAP_ABSOLUTE); // not used here
+			MapAxis(&TWCSThrottle, TMSTY, 0, AXIS_NORMAL, MAP_ABSOLUTE); //not used here
+
+		// TFRP Rudder Pedal DX Axis (assuming they are plugged into Throttle -- NOT USB to computer)
+			MapAxis(&TWCSThrottle, TCSRIGHT, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+			MapAxis(&TWCSThrottle, TCSRUDDER, DX_ZROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+			MapAxis(&TWCSThrottle, TCSLEFT, DX_YROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE);
+
+
+// ---------------------------------------------------------------------------------------
+// Curves and Deadzones
+// ---------------------------------------------------------------------------------------
+			
+	//Deadzone and Sensitivity (using standard 2 Center Deadzone & 4 Sensitivity)
+			
+		// T16000 Joystick
+			SetSCurve(&T16000, JOYX, 0, 2, 0, 4, 0);	
+			SetSCurve(&T16000, JOYY, 0, 2, 0, 4, 0);
+			SetSCurve(&T16000, RUDDER, 0, 0, 0, 0, 0);
+			SetSCurve(&T16000, THR, 0, 0, 0, 0, 0);
+
+		// TWCS Throttle
+			SetSCurve(&TWCSThrottle, TRDR, 0, 0, 0, 0, 0);
+			SetSCurve(&TWCSThrottle, TTHR, 0, 0, 0, 0, 0);
+			SetSCurve(&TWCSThrottle, TANT, 0, 0, 0, 0, 0);
+			SetSCurve(&TWCSThrottle, TMSTX, 0, 0, 0, 0, 0);
+			SetSCurve(&TWCSThrottle, TMSTY, 0, 0, 0, 0, 0);
+		
+		// TFRP Rudder Pedal 
+			SetSCurve(&TWCSThrottle, TCSRIGHT, 0, 2, 0, 4, 0);
+			SetSCurve(&TWCSThrottle, TCSRUDDER, 0, 0, 0, 0, 0);
+			SetSCurve(&TWCSThrottle, TCSLEFT, 0, 2, 0, 4, 0);
+
+
+// ---------------------------------------------------------------------------------------
+// T16000 Joystick Overview
+// ---------------------------------------------------------------------------------------		
+
+		//T16000 Joystick Buttons 
+	
+			MapKey(&T16000, TS1, fire_group1); //trigger
+			MapKey(&T16000, TS2, fire_group2); //face center
+			MapKey(&T16000, TS3, PULSE+lock_missile); //face left
+			MapKey(&T16000, TS4, CHAIN( DOWN+MOUSE_CENTER, D(2200), UP+MOUSE_CENTER)); // auto fires missile on single click - no hold needed
+
+
+		// T16000 Base Buttons Left
+			MapKey(&T16000, B5, 0 ); //base, left side, top row, outer button
+			MapKey(&T16000, B6, 0); //base, left side, top row, middle button
+			MapKey(&T16000, B7, 0); //base, left side, top row, inner button
+			MapKey(&T16000, B8, PULSE+F1); //base, left side, bottom row, inner button
+			MapKey(&T16000, B9, CHAIN( DOWN+'n', D(2200), UP+'n')); //base, left side, bottom row, middle button
+			MapKey(&T16000, B10, PULSE+'n'); //base, left side, bottom row, outer button
+
+		//T16000 Base Buttons Right
+			MapKey(&T16000, B11, 0); //base, right side, top row, outer button
+			MapKey(&T16000, B12, 0); //base, right side, top row, middle button
+			MapKey(&T16000, B13, 0); //base, right side, top row, inner button
+			MapKey(&T16000, B14, 0); //base, right side, bottom row, inner button
+			MapKey(&T16000, B15, 0); //base, right side, bottom row, middle button
+			MapKey(&T16000, B16, 0); //base, right side, bottom row, outer button
+				
+		//Remap the T16000 8-Way Hats - SC doesn't see DX Hat Diagonal buttons as mappable keys so I might have to use regular DX Button Assignments 
+			MapKey(&T16000, H1U, cycle_hostile ); //Hat Up
+			MapKey(&T16000, H1R, cycle_friendly); //Hat Right
+			MapKey(&T16000, H1D, PULSE+USB[19]);
+			MapKey(&T16000, H1L, PULSE+USB[24]);
+
+
+// ---------------------------------------------------------------------------------------		
+// TWCS Throttle Overview
+// ---------------------------------------------------------------------------------------
+
+			MapKey(&TWCSThrottle, TLOCK, PULSE+decouple); // Front Index finger click
+			MapKey(&TWCSThrottle, TBTN1, teamspeak); // Large Orange Thumb Side Button
+			MapKey(&TWCSThrottle, TBTN2 , PULSE+target_focus); // Left Pinky Button
+			MapKey(&TWCSThrottle, TBTN3 , PULSE+match_speed); // Left Ring Finger Button
+			MapKey(&TWCSThrottle, TBTN4 , PULSE+cycle_friendly); // Middle Finger Up Switch
+			MapKey(&TWCSThrottle, TBTN5 , PULSE+nearest_hostile); // Middle Finger Down Switch
+
+			// THAT3 is the BOTTOM Thumb Side Directional Hat - (Using for Quantum Jump in case in Combat and it's needed quickly)
+			MapKey(&TWCSThrottle, THAT3U, CHAIN( DOWN+'2', D(5000), UP+'2'));
+			MapKey(&TWCSThrottle, THAT3R, PULSE+'0');
+			MapKey(&TWCSThrottle, THAT3D, CHAIN( DOWN+'1', D(5000), UP+'1'));
+			MapKey(&TWCSThrottle, THAT3L, PULSE+'0');
+
+			// THAT1 is the MIDDLE Thumb Side Directional Hat - (thrusters)
+			MapKey(&TWCSThrottle, THAT1U , strafe_left); //
+			MapKey(&TWCSThrottle, THAT1R, CHAIN( PULSE+'g', D(), PULSE+'c'));
+			MapKey(&TWCSThrottle, THAT1D, 'g');
+			MapKey(&TWCSThrottle, THAT1L , strafe_down); //
+
+			// THAT2 is the TOP Thumb Side Directional Hat (Chaff)
+			MapKey(&TWCSThrottle, THAT2U, PULSE+'f');
+			MapKey(&TWCSThrottle, THAT2R, '0');
+			MapKey(&TWCSThrottle, THAT2D, PULSE+'b');
+			MapKey(&TWCSThrottle, THAT2L, '0'');
+
+
+			MapKey(&TWCSThrottle, TRDR , space_brake); // Flip Switch on Throttle
+			MapKey(&TWCSThrottle, TTHR , 0); // Main Throttle control - expect to set this for speed
+			MapKey(&TWCSThrottle, TANT , 0); // Pinky Dial 
+			MapKey(&TWCSThrottle, TMSTX , 0); // Front Index finger Left / Right joystick
+			MapKey(&TWCSThrottle, TMSTY , 0); // Front Index finger Up / Down joystick
+
+			
+			KeyAxis(&TWCSThrottle, TRDR, 0, AXMAP2( LIST( 0, 14 ), 'x', 0 ));
+			KeyAxis(&TWCSThrottle, TMSTX, 0, AXMAP2( LIST( 0, 6, 99 ), 0, CHAIN( 's', D(), 'd'), 0 ));
+			KeyAxis(&TWCSThrottle, TMSTY, 0, AXMAP2( LIST( 0, 5 ), 0, CHAIN( SPC, D(), L_CTL) ));
+
+
+// ---------------------------------------------------------------------------------------
+// Rudder Pedals 
+// ---------------------------------------------------------------------------------------	
+
+			KeyAxis(&TWCSThrottle, TCSRIGHT, 0, AXMAP2( LIST( 0, 16 ), 0, 'b' ));
+			KeyAxis(&TWCSThrottle, TCSLEFT, 0, AXMAP2( LIST( 0, 11, 18 ), 0, 'x', 0 ));	
+
+
+
+
+
+
+}//end main
+
+
+int EventHandle(int type, alias o, int x){
+	
+	DefaultMapping(&o, x);
+	
+}//end EventHandle

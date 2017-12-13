@@ -56,11 +56,11 @@
 
 
 // Weapons
-	define lock_missile				'0'//mouse3 pulse
-	define fire_missile				'0'//mouse3 2200ms hold
-	define fire_group1				'0'//mouse1
-	define fire_group2				'0'//mouse2
-	define fire_group3				'0'//need to check
+	define lock_missile				MOUSE_CENTER
+	define fire_missile				MOUSE_CENTER
+	define fire_group1				MOUSE_LEFT
+	define fire_group2				MOUSE_RIGHT
+	define fire_group3				MOUSE_CENTER
 	define fire_group4				'0'//need to check
 	
 // Defense & Other
@@ -79,12 +79,13 @@
 
 
 // Shield Management
-	define shield_forward			DX15 
-	define shield_right				DX16
-	define shield_back				DX17
-	define shield_left				DX18
-	define shield_up				DX27
-	define shield_down				DX29
-	define shield_reset				DX19
+	define shield_forward			KP8 
+	define shield_right				KP6
+	define shield_back				KP2
+	define shield_left				KP4
+	define shield_up				KP7
+	define shield_down				KP9
+	define shield_reset				KP5
+
 
 
