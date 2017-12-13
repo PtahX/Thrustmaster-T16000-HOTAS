@@ -12,7 +12,7 @@ PtahX
 
 Files
 -----------------------------
-PtahXX.XX.TMC - My main script to date
+Ptah_X.XX.TMC - My main script to date
 
 
 Hardware
