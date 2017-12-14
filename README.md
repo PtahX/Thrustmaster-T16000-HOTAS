@@ -4,7 +4,24 @@ Created by PtahX Dec, 2017
 
 This is a very basic script meant to be run with the default keybinds in Star Citizen (version 3.0 PTU). It should be noted that I normally run VoiceAttack for Shields, Weapons & Power settings and that this is by no means a completed project. Feel free to Branch this and modify as you will, I'd appreciate it if you would upload to GITHUB any changes so I can see what otehrs are using / fixing :)
 
-I've tried to use USB codes instead of key binds in case others are not using standard ENG keyboards, I am using a default SC config in game still to avoid double work. I'd suggest using the "pp_rebindkeys" command in console to reset the standard key layout in Star Citizen before you start or you might run into issues.  
+//----------------------------------------------------------
+// PtahX 1.3 notes
+
+ptahx1.3.xml was bu//----------------------------------------------------------ild by PtahX December 11, 2017 for us in Star Citizen 3.0 PTU designed using SC Joystick Mapper V 2.30 - Build 64 BETA
+by Cassini, StandardToaster - 19-May-2017. Excellent program I highly recommend!
+
+Hardware: Thrustmast T16000, Rudder Pedals & Throttle as a group with POedals connected directly to the throttle
+
+//----------------------------------------------------------
+HOW TO RUN 
+//----------------------------------------------------------
+
+-drop ptahx1.3.xml into your Star Citizen mapping file "C:\Program Files\Cloud Imperium Games\StarCitizen\Public\USER\Controls\Mappings"
+- Start Star Citizen
+- use ~ in game and type pp_rebindkeys // this will set your keyboard to the default layout
+- use ~ again to close ( otherwise it doesn't really load it properly)
+- use ~ in game and type pp_rebindkeys ptahx1.3.xml // this should load the config 
+
 
 Hopefully see you in game!
 PtahX
