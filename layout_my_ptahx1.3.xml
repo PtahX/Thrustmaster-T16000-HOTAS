@@ -1,9 +1,9 @@
-<!-- 12/14/2017 10:17:41 AM - SC Joystick Mapping - layout_my_ptahx1.3 -->
+<!-- 12/14/2017 10:17:41 AM - SC Joystick Mapping - ptahx1.3 -->
 <ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="my_ptahx1.3" 
 	js1="T.16000M" js1G="fecf3d30-dd0c-11e7-8002-444553540000" 
 	js2="TWCS Throttle" js2G="e315c410-dd0c-11e7-8001-444553540000" 
 >
-	<CustomisationUIHeader label="my_ptahx1.3" description="@ui_JoystickDefaultDesc" image="JoystickDefault">
+	<CustomisationUIHeader label="ptahx1.3" description="@ui_JoystickDefaultDesc" image="JoystickDefault">
 		<devices>
 			<keyboard instance="1"/>
 			<mouse instance="1"/>
