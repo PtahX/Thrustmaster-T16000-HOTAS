@@ -1,9 +1,9 @@
-<!-- 12/14/2017 9:51:32 PM - SC Joystick Mapping - layout_my_ptahx -->
-<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="my_ptahx" 
+<!-- 12/14/2017 10:37:58 PM - SC Joystick Mapping - layout_my_ptahx1.4 -->
+<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="my_ptahx1.4" 
 	js1="T.16000M" js1G="fecf3d30-dd0c-11e7-8002-444553540000" 
 	js2="TWCS Throttle" js2G="e315c410-dd0c-11e7-8001-444553540000" 
 >
-	<CustomisationUIHeader label="my_ptahx" description="@ui_JoystickDefaultDesc" image="JoystickDefault">
+	<CustomisationUIHeader label="my_ptahx1.4" description="@ui_JoystickDefaultDesc" image="JoystickDefault">
 		<devices>
 			<keyboard instance="1"/>
 			<mouse instance="1"/>
@@ -409,16 +409,10 @@
 			<rebind input="kb1_ralt+comma"   />
 		</action>
 		<action name="v_roll_left">
-			<rebind input="js2_roty"   />
-		</action>
-		<action name="v_roll_left">
 			<rebind input="kb1_q"   />
 		</action>
 		<action name="v_roll_left">
 			<rebind input="xi1_ " multiTap="1"  />
-		</action>
-		<action name="v_roll_right">
-			<rebind input="js2_rotx"   />
 		</action>
 		<action name="v_roll_right">
 			<rebind input="kb1_e"   />
@@ -766,16 +760,10 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_decoupled_roll_left">
-			<rebind input="js2_roty"   />
-		</action>
-		<action name="v_decoupled_roll_left">
 			<rebind input="kb1_q"   />
 		</action>
 		<action name="v_decoupled_roll_left">
 			<rebind input="xi1_ " multiTap="1"  />
-		</action>
-		<action name="v_decoupled_roll_right">
-			<rebind input="js2_rotx"   />
 		</action>
 		<action name="v_decoupled_roll_right">
 			<rebind input="kb1_e"   />
