@@ -10,7 +10,15 @@ This is a very basic script meant to be run with the default keybinds in Star Ci
 //----------------------------------------------------------
 Ptahx1.7 is a tweaking update for 3.0 PTU Christmas 2017 release.
 Changes to the 3.0 PTU release have messed up the previous configs, this update will hopefully correct most of these. I haven't had much time with work to test this out yet if you find something that needs to be changed please let me know:)
- 
+
+----------------------------------
+Mappings Directory has also moved to C:\Program Files\Roberts Space Industries\StarCitizen\LIVE\USER\Controls\Mappings\
+----------------------------------
+- drop ptahx1.7.xml into your Star Citizen mapping file "C:\Program Files\Roberts Space Industries\StarCitizen\LIVE\USER\Controls\Mappings\
+"
+- Start Star Citizen
+- use ~ in game and type pp_rebindkeys // this will set your keyboard to the default layout
+- use ~ in game and type pp_rebindkeys ptahx1.7.xml // this should load the config and hopefully all will work 
 Cheers!
 PtahX
 
