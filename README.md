@@ -2,13 +2,19 @@
 Created by PtahX Dec, 2017
 
 
-This is am XML script meant to change the keybinds in Star Citizen (version 3.0 PTU) to my own layout. YOU DO NOT NEED TO RUN TARGET SOFTWARE WITH THIS CONFIG!. I personally normally run VoiceAttack for Shields, Weapons & Power settings and have some redundancy is built in as well. At some point I will try to make up a visual guide for the binds - not currently completed.
+This is am XML script meant to change the keybinds in Star Citizen (version 3.0 PTU) to my own layout. YOU DO NOT NEED TO RUN TARGET SOFTWARE WITH THIS CONFIG!. I personally normally run VoiceAttack for Shields, Weapons & Power settings and have some redundancy is built in as well. 
 
 This config is setup for the following game assignments
 - Joystick 1 T.16000
 - Joystick 2 TWCS Throttle
 - Joystick 3 T. Rudder
 - Joystick 4 Razer Orbweaver (not really assigned)
+
+---------------------------------
+Layout File Completed
+---------------------------------
+Did this graphical layout quickly today -- I'll need to recheck everything as I can
+
 
 ----------------------------------------------------------
  PtahX 1.7 notes
