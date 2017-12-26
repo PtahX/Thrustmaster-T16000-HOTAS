@@ -2,7 +2,7 @@
 Created by PtahX Dec, 2017
 
 
-This is am XML script meant to change the keybinds in Star Citizen (version 3.0 PTU) to my own layout. YOU DO NOT NEED TO RUN TARGET SOFTWARE WITH THIS CONFIG!. I personally normally run VoiceAttack for Shields, Weapons & Power settings and have soem reduntancy built in there as well. At some point I will try to make up a visual guide for the binds - not currently completed.
+This is am XML script meant to change the keybinds in Star Citizen (version 3.0 PTU) to my own layout. YOU DO NOT NEED TO RUN TARGET SOFTWARE WITH THIS CONFIG!. I personally normally run VoiceAttack for Shields, Weapons & Power settings and have some redundancy is built in as well. At some point I will try to make up a visual guide for the binds - not currently completed.
 
 This config is setup for the following game assignments
 - Joystick 1 T.16000
