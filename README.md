@@ -4,11 +4,20 @@ Created by PtahX Dec, 2017
 
 This is a very basic script meant to be run with the default keybinds in Star Citizen (version 3.0 PTU). It should be noted that I normally run VoiceAttack for Shields, Weapons & Power settings and that this is by no means a completed project. Feel free to Branch this and modify as you will, I'd appreciate it if you would upload to GITHUB any changes so I can see what others are using / fixing :)
 
+
+//----------------------------------------------------------
+// PtahX 1.7 notes
+//----------------------------------------------------------
+Ptahx1.7 is a tweaking update for 3.0 PTU Christmas 2017 release
+Changes to the 3.0 PTU release have messed up the previous configs, this update will hopefully correct most of these. I haven't had much time with work to test this out yet if you find something that needs to be changed please let me know:)
+ 
+
+
 //----------------------------------------------------------
 // PtahX 1.3 notes
 //----------------------------------------------------------
 
-ptahx1.3.xml was build by PtahX December 11, 2017 for us in Star Citizen 3.0 PTU designed using SC Joystick Mapper V 2.30 - Build 64 BETA by Cassini, StandardToaster - 19-May-2017. Excellent program I highly recommend!
+ptahx1.3.xml was build by PtahX December 11, 2017 for us in Star Citizen 2.6 PTU designed using SC Joystick Mapper V 2.30 - Build 64 BETA by Cassini, StandardToaster - 19-May-2017. Excellent program I highly recommend!
 
 
 //----------------------------------------------------------
