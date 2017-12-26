@@ -8,10 +8,11 @@ This is a very basic script meant to be run with the default keybinds in Star Ci
 //----------------------------------------------------------
 // PtahX 1.7 notes
 //----------------------------------------------------------
-Ptahx1.7 is a tweaking update for 3.0 PTU Christmas 2017 release
+Ptahx1.7 is a tweaking update for 3.0 PTU Christmas 2017 release.
 Changes to the 3.0 PTU release have messed up the previous configs, this update will hopefully correct most of these. I haven't had much time with work to test this out yet if you find something that needs to be changed please let me know:)
  
-
+Cheers!
+PtahX
 
 //----------------------------------------------------------
 // PtahX 1.3 notes
