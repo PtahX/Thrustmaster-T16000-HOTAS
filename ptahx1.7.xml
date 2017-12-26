@@ -1,4 +1,4 @@
-<!-- 12/25/2017 4:36:58 PM - SC Joystick Mapping - layout_my_ptahx1.7 -->
+<!-- 12/25/2017 6:26:44 PM - SC Joystick Mapping - layout_my_ptahx1.7 -->
 <ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="my_ptahx1.7" 
 	js1="T.16000M" js1G="fecf3d30-dd0c-11e7-8002-444553540000" 
 	js2="TWCS Throttle" js2G="e315c410-dd0c-11e7-8001-444553540000" 
@@ -437,9 +437,6 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_throttle_toggle_minmax">
-			<rebind input="js2_z"   />
-		</action>
-		<action name="v_throttle_toggle_minmax">
 			<rebind input="kb1_backspace"   />
 		</action>
 		<action name="v_throttle_toggle_minmax">
@@ -464,7 +461,7 @@
 			<rebind input="xi1_thumbl_up"   />
 		</action>
 		<action name="v_throttle_up">
-			<rebind input="js1_ " multiTap="1"  />
+			<rebind input="js2_z"   />
 		</action>
 		<action name="v_throttle_up">
 			<rebind input="kb1_w"   />
@@ -473,7 +470,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_throttle_down">
-			<rebind input="js1_ " multiTap="1"  />
+			<rebind input="js2_z"   />
 		</action>
 		<action name="v_throttle_down">
 			<rebind input="kb1_s"   />
@@ -521,7 +518,7 @@
 			<rebind input="xi1_shoulderl+thumbr"   />
 		</action>
 		<action name="v_strafe_up">
-			<rebind input="js2_button11"   />
+			<rebind input="js2_button7"   />
 		</action>
 		<action name="v_strafe_up">
 			<rebind input="kb1_space"   />
@@ -530,7 +527,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_strafe_down">
-			<rebind input="js2_button13"   />
+			<rebind input="js2_button9"   />
 		</action>
 		<action name="v_strafe_down">
 			<rebind input="kb1_lctrl"   />
@@ -638,7 +635,7 @@
 			<rebind input="xi1_shoulderl+thumbl"   />
 		</action>
 		<action name="v_decoupled_strafe_up">
-			<rebind input="js2_button11"   />
+			<rebind input="js2_button7"   />
 		</action>
 		<action name="v_decoupled_strafe_up">
 			<rebind input="kb1_space"   />
@@ -647,7 +644,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_decoupled_strafe_down">
-			<rebind input="js2_button13"   />
+			<rebind input="js2_button9"   />
 		</action>
 		<action name="v_decoupled_strafe_down">
 			<rebind input="kb1_lctrl"   />
@@ -829,7 +826,7 @@
 	</actionmap>
 	<actionmap name="spaceship_docking">
 		<action name="v_toggle_docking_mode">
-			<rebind input="js1_button6"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_toggle_docking_mode">
 			<rebind input="kb1_n"   />
@@ -838,7 +835,7 @@
 			<rebind input="xi1_shoulderl+dpad_up"   />
 		</action>
 		<action name="v_invoke_docking">
-			<rebind input="js1_button10"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_invoke_docking">
 			<rebind input="kb1_n"   />
@@ -849,13 +846,13 @@
 	</actionmap>
 	<actionmap name="spaceship_targeting">
 		<action name="v_aim_yaw">
-			<rebind input="js1_rctrl+x"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_yaw">
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_yaw_left">
-			<rebind input="js1_hat2_left"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_yaw_left">
 			<rebind input="kb1_ " multiTap="1"  />
@@ -864,7 +861,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_yaw_right">
-			<rebind input="js1_hat2_right"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_yaw_right">
 			<rebind input="kb1_ " multiTap="1"  />
@@ -873,13 +870,13 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_pitch">
-			<rebind input="js1_rctrl+y"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_pitch">
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_pitch_up">
-			<rebind input="js1_hat2_down"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_pitch_up">
 			<rebind input="kb1_ " multiTap="1"  />
@@ -888,7 +885,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_pitch_down">
-			<rebind input="js1_hat2_up"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_aim_pitch_down">
 			<rebind input="kb1_ " multiTap="1"  />
@@ -1011,7 +1008,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_target_cycle_hostile_fwd">
-			<rebind input="js1_hat1_right"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_target_cycle_hostile_fwd">
 			<rebind input="kb1_y"   />
@@ -1020,7 +1017,7 @@
 			<rebind input="xi1_dpad_left"   />
 		</action>
 		<action name="v_target_cycle_hostile_back">
-			<rebind input="js1_hat1_up"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_target_cycle_hostile_back">
 			<rebind input="kb1_h"   />
@@ -1053,7 +1050,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_target_head_tracking">
-			<rebind input="js1_button11"   />
+			<rebind input="js1_hat1_left"   />
 		</action>
 		<action name="v_target_head_tracking">
 			<rebind input="kb1_lalt+r"   />
@@ -1190,16 +1187,10 @@
 			<rebind input="xi1_dpad_up"   />
 		</action>
 		<action name="v_target_cycle_all_fwd">
-			<rebind input="js1_hat1_right"   />
-		</action>
-		<action name="v_target_cycle_all_fwd">
 			<rebind input="kb1_i"   />
 		</action>
 		<action name="v_target_cycle_all_fwd">
 			<rebind input="xi1_ " multiTap="1"  />
-		</action>
-		<action name="v_target_cycle_all_back">
-			<rebind input="js1_hat1_down"   />
 		</action>
 		<action name="v_target_cycle_all_back">
 			<rebind input="kb1_k"   />
@@ -1500,7 +1491,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_power_throttle_up">
-			<rebind input="js2_z"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_power_throttle_up">
 			<rebind input="kb1_lalt+np_5"   />
@@ -1509,7 +1500,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_power_throttle_down">
-			<rebind input="js2_z"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_power_throttle_down">
 			<rebind input="kb1_lalt+np_4"   />
@@ -1751,7 +1742,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_starmap">
-			<rebind input="js2_button13"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_starmap">
 			<rebind input="kb1_f2"   />
@@ -2053,7 +2044,7 @@
 			<rebind input="xi1_shoulderl+y"   />
 		</action>
 		<action name="v_horn">
-			<rebind input="js1_button8"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_horn">
 			<rebind input="kb1_capslock"   />
@@ -2194,7 +2185,7 @@
 			<rebind input="xi1_ " multiTap="1"  />
 		</action>
 		<action name="v_starmap">
-			<rebind input="js2_button13"   />
+			<rebind input="js1_ " multiTap="1"  />
 		</action>
 		<action name="v_starmap">
 			<rebind input="kb1_f2"   />
